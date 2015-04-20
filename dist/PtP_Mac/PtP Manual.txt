@@ -1,0 +1,310 @@
+Path to the Presidency Instruction Manual
+
+	Path to the Presidency lets you play a U.S. presidential candidate in an election. The goal 
+of course is to win the election, which you acheive through campaigning and advertising. You'll need 
+money for your campaign, which you get from your party, special interests, and fundraising.
+
+1) Installing the game
+	The is no installer at this time. Just place the game folder where you want it,and if 
+necessary unzip the file appropriate to your system.
+
+	System requirements
+OS-windows, MacOSX, or Linux
+Disk space required- 25MB
+Video Card-A card supporting GLSL and OpenGL 2.0 or greater
+Java Runtime Environment 1.5 or greater
+	
+
+2) Starting the game
+
+	To Start the game, go to the game folder and click either the executable .jar file or your 
+system specific executable. A screen should pop up giving you display options. When you are 
+satisfied with the settings, click ok. A main menu will appear. Click "new" to start a new game or
+"Load" to load a saved game.
+
+3) Creating a Candidate
+
+	When starting a new game you'll go to the candidate creation screen. The first thing you'll
+do is choose the number of human and AI players for your game. The maximum total number of players 
+is 6. Once the number of players is chosen, the first Human player's candidate is created. Each 
+player gets 6 dev points to spend on attributes.
+
+	NAME- The candidates name. It costs nothing.
+
+	CHARISMA- This value affects the success of candidates campaigning activities.It's range is 
+0-3 and the higher the value the better the candidate is likely to do when campaigning,fundraising 
+ect.. The cost is 1 dev point per point of charisma.
+
+	INCOME- The candidates base income. It has a ragne of 0-3, and costs 1 dev point per point 
+of income.Additional income may be gained from your party or a special interest group. Each turn the 
+candidate's total income is added to his funds. Funds are needed for most actions in the game.
+
+	PARTY- The candidate's political party. It may provide an income bonus or volunteers to help 
+you campaign.
+	Here is a list of available parties and their stats;
+
+Party		Point Cost	Income Bonus	Additional Volunteers	Team Color
+-----------------------------------------------------------------------------------
+Democratic	3		2		2			 Magenta
+Republican	3		4		1			 Blue
+Libertarian	1		1		0			 Black
+Green		1		0		1			 Green
+Constitution	1		1		0			 Red	
+Independant	0		0		0			 Gold
+
+	The team color is displayed on the ties of the volunteers working for that parties 
+candidate. The bonuses listed in the table are for a candidate with 100% support of his party.
+The actual support will depend on how close the candidates stances on issues matches that of his 
+party, which brings us to...
+		
+	ISSUES- Each candidate must have a stance on issues that come up during the campaign. The 
+stance's are represented by a value in the range of -2 to 2. Generally -2 means total opposition 
+to what is at issue and 2 means total support. The defualt stance for all issues is 0. You can 
+modify your stances on the issues by pressing the "set issues" button. The issues screen will pop up
+which lists the issues and what the stances specifically mean for that issue. You can adjust each 
+issue using the dropdown next to it. 
+	The top of screen show the percentage of party support you have. That percentage is also 
+the percentage of party bonusses you get, thus if your candidate is on the Democratic ticket and 
+has 50% support you get 1 additional income and 1 volunteer.You can match your party's stances and 
+get 100% support by pressing the "Match Party" button. The reasons not to match your party would be 
+to match the stances of states you want to win or special interests you want to gain the support of.
+If you have chosen to be independant, the percentage of support can be ignored.
+
+Here is a list of issues and each party's stance on them. 
+
+Issues			Democrat	Republican	Libertarian	Green	Consitution
+--------------------------------------------------------------------------------------------
+Abortion		    1		-1		 0		 2	-2
+Balanced Budget		   -1		-1		 2		 1	 1
+Business Subsidies	    1		 2		-2		-1	 0
+Censorship		    1		 1		-2		 1	 1	
+Church/State Separation	    0		-1		 1		 2	-2
+Death Penalty		    0		 2		 0		-2	 2
+Drug Laws		    1		 2		-2		-1	 2
+Environment		    0		-1		 0		 2	 0
+Free Market		   -1		-1		 2		-2	 1	
+Free Trade		    1		 1		 2		-2	-2		
+Gay Marriage    	    0		-1		 2		 2	-2		
+Gun Control		    1		-1		-2		 2	-2
+Immigration		    0		-1		 2		 1	-2
+Military Spending	    1		 2		 0		-2	 1
+National Health Care	    0		-2		-2		 2	-2
+National Security	    1		 2		-2		-2	-1	
+Welfare			    1		-1		-2		 2	-2
+
+	States and special interests also have stances on issues. A states stance on the issue of 
+the day is compared to the candidates stance when performing actons in that state, and the 
+difference between them affects the outcome.
+	Special Interest are more likely to support you if your stances match theirs on the issues 
+they care about.
+
+Here's a list of the states and the issues on which their stance is positive or negative. On all
+other issues their stance has a value of 0. For the purposes of this game D.C. is treated as a state.
+
+State			Issues
+---------------------------------------------------------------------------
+Alabama			Abortion=-1, Church/State Separation=-2, Environment=-2, Gun Control=-1
+Alaska			Death Penalty=-1, Drug Laws=-1, Environment=-1
+Arkansas		Abortion=-2, Environment=-1, Church/State Separation=-1,Death Penalty=1, Drug Laws=-1
+Arizona			Death Penalty=1, Environment=1, Immigration=-1, Gun Control=2 
+California		Abortion=1, Drug Laws=-1, Environment=1, Immigration=-1, Military Spending=2, National Health Care=2, Welfare=2
+Colorado		Death Penalty=1, Drug Laws=-1, Environment=1
+Connecticut		Abortion=1, Death Penalty=1, Drug Laws=1, Environment=1, Gay Marriage=1
+D.C.			Abortion=1, Gun Control=1, Drug Laws=-1
+Delaware		Death Penalty=1, Drug Laws=2, Free Market=2, Welfare=1		
+Florida			Abortion=-1, Death Penalty=2, Drug Laws=2, Immigration=-1, 
+Georgia			Abortion=-1, Church/State Separation=-2, Death Penalty=2, Drug Laws=1, Military Spending=1
+Hawaii			Abortion=2, Death Penalty=-2, Drug Laws=-1, Environment=1
+Idaho			Abortion=-1, Death Penalty=2, Environment=1, Gun Control=-1, 
+Illinois		Buisiness Subsides=1, Death Penalty=1, Free Trade=-1, Gun Control=1, Welfare=-1
+Indiana			Abortion=-1, Buisiness Subsides=1, Death Penalty=1, Environment=-2, Free Trade=-1
+Iowa			Buisiness Subsides=1, Death Penalty=-1, Welfare=-1
+Kansas			Abortion=-1, Death Penalty=-1, Gun Control=-1, Welfare=-1 			
+Kentucky		Abortion=-1, Death Penalty=1, Environment=-1, Gun Control=-1,
+Louisiana		Death Penalty=1, Drug Laws=1, Environment=-2, Military Spending=1
+Maine			Death Penalty=-2, Drug Laws=-1,  Gun Control=-1,
+Maryland		Abortion=1, Death Penalty=1, Environment=1, Gun Control=1, Military Spending=2, National Security=2, Welfare=1
+Massachusetts		Death Penalty=-1, Environment=1, Gay Marriage=1, Military Spending=1
+Michigan		Buisiness Subsides=1, Free Trade=-1, Gun Control=1
+Minnesota		Buisiness Subsides=1, Death Penalty=-2, Drug Laws=-1, Environment=1, Gun Control=1 
+Mississippi		Abortion=-2, Church/State Separation=-2, Death Penalty=2, Drug Laws=-1, Environment=-2, Gun Control=-2,
+Missouri		Abortion=-1, Buisiness Subsides=1, Death Penalty=1, Environment=-1,  Gun Control=-1, 
+Montana			Death Penalty=1, Gun Control=-1
+Nebraska		Abortion=-1, Buisiness Subsides=1, Death Penalty=1, Gun Control=-1
+New Hampshire		Death Penalty=1, Gay Marriage=1, Gun Control=-1,
+New Jersey		Abortion=1, Death Penalty=-1, Drug Laws=2, Environment=1, Gun Control=2, Military Spending=1 
+New Mexico		Abortion=-1, Death Penalty=-1, Drug Laws=-1, Gun Control=-1, Military Spending=1, Welfare=2
+New York		Death Penalty=-1, Drug Laws=-1, Environment=1, Gay Marriage=1
+Nevada			Death Penalty=1, Drug Laws=-1, Gun Control=-1 
+North Carolina		Death Penalty=1, Drug Laws=-1, Gun Control=-1, Military Spending=1
+North Dakota		Buisiness Subsides=1, Death Penalty=-1, Environment=-1, Welfare=1
+Ohio			Buisiness Subsides=1, Drug Laws=-1, Death Penalty=1, Environment=-1, Free Trade=-1
+Oklahoma		Abortion=-1, Death Penalty=1, Drug Laws=1, Environment=-1
+Oregon			Abortion=2, Environment=1, Death Penalty=1, Gun Control=-1, Welfare=1
+Pennsylvania		Abortion=-1, Death Penalty=1, Drug Laws=1, Free Trade=-1 
+Rhode Island		Death Penalty=-1, Drug Laws=1, Environment=1, Military Spending=1
+South Carolina		Abortion=-1, Church/State Separation=-2, Death Penalty=1, Drug Laws=1, Gun Control=-1, Welfare=-2   
+South Dakota		Abortion=-2, Buisiness Subsides=1, Death Penalty=1, Drug Laws=2, Gun Control=-1
+Tennessee		Church/State Separation=-1, Death Penalty=1, Environment=-1, Gun Control=-1
+Texas			Buisiness Subsides=1, Death Penalty=2, Immigration=-1, Gun Control=-1, Military Spending=1, Welfare=-1 
+Utah			Abortion=-1, Death Penalty=1, Gun Control=-1, Welfare=1 
+Vermont			Abortion=2, Death Penalty=-1, Drug Laws=-1, Environment=1, Gay Marraige=1, Gun Control=-2, Welfare=1
+Virginia		Abortion=-1, Death Penalty=1, Drug Laws=1, Military Spending=2, National Security=2 
+Washington		Abortion=1, Environment=-1, Death Penalty=1, Military Spending=2, Welfare=1  
+West Virginia		Death Penalty=-1, Drug Laws=1, Environment=-2, Gun Control=-1, Welfare=1 
+Wisconsin		Death Penalty=-2, Immigration=-2
+Wyoming			Death Penalty=1, Environment=-1, Gun Control=-2, Welfare=1 
+
+Here's a list of the special interests and their stances on the issues they care about.
+
+Special Interest			Issues
+----------------------------------------------------------------------------------------
+Agribusiness			Business Subsidies=2, Censorship=1, Environment=-2, Free Market=1, Free Trade=-1, Immigration=1
+Aerospace Industry		Free Market=1, Military Spending=2
+Banks/Investment Firms		Business Subsidies=2, Free Market=2, Free Trade=2, Military Spending=1
+Big Three Auto			Business Subsidies=2, Environment=-2, Free Market=1, Free Trade=-1, Military Spending=2
+Christian Fundamentalists	Abortion=-2, Censorship=2, Church/State Separation=-2, Gay Marriage=-2, National Securtiy=1
+Civil Rights Groups		Censorship=1, Death Penalty=-2, Gun Control=2, Immigration=2, National Securtiy=-1, Welfare=1		
+Coal Industry			Environment=-2, Free Market=2
+Drug Industry			Environment=-1, Free Trade=-1, National Health Care=-1
+Environmentalists		Environment=2, Free Market=-2, Free Trade=-2, Military Spending=-1
+Insurance Companies		Free Market=-1,National Health Care=-2
+Labor Unions			Business Subsidies=2, Free Market=-1, Free Trade=-1, Immigration=-2
+Left Wing Celebrity		Abortion=2, Censorship=1, Church/State Separation=1, Death Penalty=-2, Drug Laws=-2, Environment=2, Free Market=-2, Free Trade=-2, Gay Marriage=2, Immigration=2, Gun Control=2, Military Spending=-2, National Health Care=2, National Security=-2, Welfare=2
+NRA				Censorship=2, Gun Control=-2
+Oil/Gas Industry		Business Subsidies=1, Environment=-2, Free Market=1, Military Spending=2
+Right Wing Celebrity		Abortion=-2, Censorship=2, Church/State Separation=-2, Death Penalty=2, Drug Laws=2, Environment=-1, Free Market=2, Free Trade=-2, Gay Marriage=-2, Immigration=-2, Gun Control=-2, Military Spending=2, National Health Care=-2, National Security=2, Welfare=-2
+
+	AVATAR-The model that represents your candidate. You can use the "Prev" and "next" buttons 
+at the bottom of the screen to switch between the available avatars.
+
+	Once you have finished making your candidate, click the "Accept" button. If there are 
+additional human players, each will get a turn to make their candidate. When the last human player
+clicks the "Accept" button, the game map will come up and play will begin.
+
+4) Playing the Game
+	As with the real election the goal is to get more electoral votes than the other candidate. 
+It is important to remember that that all calculations of support during the game are projections, 
+not guaranteed votes. You can't be sure who's going to win until the election at the end of the game,
+unless the projected winner's lead is substantial.
+
+	DISPLAY-You will see a U.S. map with all 50 states and D.c. outlined. The numbers on each 
+state are its electoral votes. 
+	Ech state has a spherical waypoint that displays the flag of the party whose candidate has 
+the most support in that state. States with a tie(swing states) display a black question mark on a 
+gray background. 
+	Candidates and their volunteers will be placed around the waypoints of random;y chosen 
+states. When the game begins the camera will be centered on the candidate of the first human player,
+and it will have a pick target under it. Volunteers will have ties bearing the team color of the 
+party their candidate belongs to.
+
+	There are buttons and displays at the top of the screen and more buttons at the bottom. First 
+I'll go over the displays;
+
+Issue of the Day- When campaigning or advertising, your stance on this issue will be compaired to 
+the stance of the target state. Players can bid for a chance to choose next turns issue. The highest 
+bidder gets to choose. If no one bids, or its the first turn, it will be chosen at random.
+
+Turns Left-The number of turns remaining before the election, not including the present turn.
+
+	Now, about the buttons at the top of the screen;
+
+"Bid"-Click this button to place a bid for the issue of the day.
+
+"Menu"- Clicking this button pulls up a menu for saving, loading, or exiting a game.
+
+"End Turn"-Click this to end your turn. If there are human players after you, They will get a chance 
+to act, otherwise the AI players will go and then a new turn will start.
+
+"Toggle AI Log"- Click this button to display or remove a log of AI player actions 
+during the previous turn. AI players go after the human players, so bringing it up on the first turn
+will display nothing. This log will automatically appear at the beginning of each turn after the 
+first.
+  
+	The buttons on the bottom of the screen are for the various actions you can take on your 
+turn. The ones on the left are for singel actions. The ones on the right are for repeatable actions.
+These actions are explained in subsequent sections of this manual.
+ 
+	KEY AND MOUSE COMMANDS- To move the camera around the map. use the A,S,D, and W keys as you
+would in an FPS.
+	Left click on your candidate or volunteer to select him/her. You can't select characters 
+that are not yours. Middle click on any character to get information on the candidate or the 
+candidate he works for. This info includes the candidates party flag that is displayed on state way 
+points.
+
+	SINGLE ACTIONS- These are actions that can be peformed once per turn by your candidate and 
+each volunteer you have. To perform the action click the appropriate button at the bottom of the 
+screen. For the purposes of calculating success, volunteers have a charisma of 0.
+
+	The possibel actions are;
+
+Fly- This action lets you fly to any state in the union. Choose your destination and hit "Accept".
+It cost 2 funds.
+
+Drive- This action lets you drive to a state bordering the one you're in. Choose your destination 
+and hit "Accept". It cost 1 fund.
+
+Campaign- Your avatar or volunteer tries to raise support in the state he is in, through speeches,
+canvasing, and/or public gestures. It costs 1 fund. Degree of success is affected by the charisma of 
+the acting character and how close your stance on the issue of the day is to the state's. This 
+action can backfire, resulting in less support.  
+
+Fundraise- Your avatar or volunteer attempts to raise funds in the state he is in. It cost nothing. 
+Degree of Success is affected by the same parameters as campaigning, but success is less likely.
+
+Recruit- Your avatar or volunteer attempts to recuit a volunteer in the state he is in. It cost 
+nothing. Degree of Success is affected by the same parameters as campaigning, but success is less 
+likely. If successful, a volunteer will appear in that state, and be able to act that turn.
+
+Pander- Your avatar or volunteer attempts to gain the endorsement of a Special Interest. It costs 
+nothing. Degree of Success is affected by the charisma of your avatar and how close his stances on
+the issues are to the stances of the issues the Special Interest cares about. Special Interest will 
+only support one candidate, so if they have already endorsed one, you must have closer agreement 
+on the issues they care about than their currently endorsed candidate to convince them to switch 
+their endorsement to you. An endorsement means you will get income from them each turn and/or 
+volunteers.
+
+	Here's a list of the beneftis by Special Interests
+ 
+Special Interest		Income/Turn	Volunteers			
+----------------------------------------------------------------------------------------
+Agribusiness			2
+Aerospace Industry		2
+Banks/Investment Firms		4
+Big Three Auto			1		1
+Christian Fundamentalists	1		1
+Civil Rights Groups				2
+Coal Industry			2
+Drug Industry			3
+Environmentalists		1		1
+Insurance Companies		2
+Labor Unions			1		1
+Left Wing Celebrity		1		1
+NRA						1
+Oil/Gas Industry		3
+Right Wing Celebrity		1		1 
+
+	REPEATABLE ACTIONS- These actions can be performed by the player as many times a turn as he 
+can afford. 
+	The possible actions are;
+
+Advertise- This action allows you to advertise in a chosen state. You can either choose a positive 
+ad to try and raise your support in that state, or a negative add to try an lower a chosen opponent's 
+support in that state. A negative add can have a greater effect. Degree of success is affected by the 
+charisma of the candidate and how close your stance on the issue of the day is to the state's. This 
+action can backfire, resulting the opposite of the intended effect.
+
+Flip Flop- You can "clarify" your position on an issue to improve your chances of successfully 
+acting in certain states, or to gain the endorsement of a Special Interest. Doing so will alter the 
+support you get from your party, which may result in loss of party income or volunteers. Flip 
+flopping when you have an endorsement from a Special Interest may increase your risk of that 
+endorsement being lost to someone else.
+
+	VICTORY CONDITIONS- After the last turn is played, the election screen will pop up. In the 
+center are the names of each candidate with the electoral votes the have gained. At this point the 
+values are all 0 because the election hasn't been held yet.At the bottom of the screen is the name 
+of the projected winner based on who has the most projected electoral votes, but as previously 
+mentioned, being the projected winner does not gaurantee actuallywinning. A small amount of 
+randomness is built in to the actual vote tally.
+	Click on the "Tally Votes" button to run the election. Each candidates electoral results 
+will be listed by there names, and the winner will be displayed at the bottom. 
